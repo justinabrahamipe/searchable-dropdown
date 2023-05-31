@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Dropdown from "./Dropdown";
 
 function SearchableDropdown({
   listOfValues,
@@ -23,7 +24,7 @@ function SearchableDropdown({
         value={textfieldValue}
       />
       {listOfValues?.filter(filterArray).map((i) => (
-        <div key={i[uniqueId]}>{i[itemInObjectToShowInDropdown]}</div>
+        <Dropdown key={i[uniqueId]} item={i[itemInObjectToShowInDropdown]} />
       ))}
     </div>
   );

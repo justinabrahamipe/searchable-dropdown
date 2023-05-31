@@ -1,5 +1,6 @@
 {
     "extends": ["airbnb","airbnb/hooks","prettier"],
     "ignorePatterns":["**/boilerplate-code/**"],
-    "globals":{"window":true,"document":true}
+    "globals":{"window":true,"document":true},
+    "rules":{"react/prop-types":["off"]}
   }
