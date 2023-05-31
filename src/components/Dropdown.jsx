@@ -1,10 +1,31 @@
 import React from "react";
 
-function Dropdown({ item }) {
+export default function Dropdown({
+  uniqueId,
+  listOfValues,
+  itemInObjectToShowInDropdown,
+  textfieldValue,
+  onSelect,
+}) {
+  const filterArray = (i) =>
+    i[itemInObjectToShowInDropdown]?.toLowerCase()?.includes(textfieldValue);
   return (
-    <div>
-     {item}
-    </div>
+    <>
+      {listOfValues?.filter(filterArray).map((i) => (
+        <div
+          key={i[uniqueId]}
+          role="button"
+          tabIndex={0}
+          onClick={() => {
+            onSelect(i);
+          }}
+          onKeyDown={() => {
+            onSelect(i);
+          }}
+        >
+          {i[itemInObjectToShowInDropdown]}
+        </div>
+      ))}
+    </>
   );
 }
-export default Dropdown;

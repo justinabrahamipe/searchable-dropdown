@@ -1,6 +1,6 @@
 {
   "name": "searchable-dropdown",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "http://justinabrahamipe.github.io/searchable-dropdown",
   "private": true,
   "dependencies": {
@@ -49,5 +49,8 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "gh-pages": "^5.0.0",
     "prettier-eslint-cli": "^7.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
