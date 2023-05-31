@@ -1,10 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import SearchableDropdown from "../SearchableDropdown";
+import COUNTRIES from "../data/data";
 
 function App() {
+  const onSelect = (item) => console.log(item);
   return (
     <div className="App">
-      <input type='text'/>
+      <SearchableDropdown
+        listOfValues={COUNTRIES}
+        itemInObjectToShowInDropdown="name"
+        onSelect={onSelect}
+        uniqueId="name"
+      />
     </div>
   );
 }
