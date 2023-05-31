@@ -2,6 +2,7 @@
   "name": "searchable-dropdown",
   "version": "1.0.0",
   "homepage": "http://justinabrahamipe.github.io/searchable-dropdown",
+  "repository": "https://github.com/justinabrahamipe/searchable-dropdown.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
