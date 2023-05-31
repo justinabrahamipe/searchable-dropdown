@@ -1,6 +1,7 @@
 {
-    "extends": ["airbnb","airbnb/hooks","prettier"],
-    "ignorePatterns":["**/boilerplate-code/**"],
-    "globals":{"window":true,"document":true},
-    "rules":{"react/prop-types":["off"]}
-  }
+  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "parserOptions": { "ecmaVersion": 2021 },
+  "ignorePatterns": ["**/boilerplate-code/**"],
+  "globals": { "window": true, "document": true },
+  "rules": { "react/prop-types": ["off"] }
+}
