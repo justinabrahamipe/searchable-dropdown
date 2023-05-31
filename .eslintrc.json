@@ -1,4 +1,5 @@
 {
-    "extends": ["airbnb"],
-    "ignorePatterns":["/boilerplate-code/**","**/index.js"]
+    "extends": ["airbnb","airbnb/hooks","prettier"],
+    "ignorePatterns":["**/boilerplate-code/**"],
+    "globals":{"window":true,"document":true}
   }

@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './boilerplate-code/index.css';
-import App from './boilerplate-code/App';
-import reportWebVitals from './boilerplate-code/reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./boilerplate-code/index.css";
+// eslint-disable-next-line import/no-named-as-default-member, import/no-named-as-default
+import reportWebVitals from "./boilerplate-code/reportWebVitals";
+import App from "./boilerplate-code/App";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // eslint-disable-next-line react/jsx-filename-extension
   <React.StrictMode>
     <App />
   </React.StrictMode>
