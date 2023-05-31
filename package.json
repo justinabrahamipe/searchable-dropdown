@@ -51,6 +51,6 @@
     "prettier-eslint-cli": "^7.1.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@justinabrahamipe:registry": "https://npm.pkg.github.com"
   }
 }
