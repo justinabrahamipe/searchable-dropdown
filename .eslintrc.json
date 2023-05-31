@@ -1,0 +1,4 @@
+{
+    "extends": ["airbnb"],
+    "ignorePatterns":["/boilerplate-code/**","**/index.js"]
+  }
