@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import SearchableDropdown from "../SearchableDropdown";
+import SearchableDropdown from "../components/SearchableDropdown";
 import COUNTRIES from "../data/data";
 
 function App() {
