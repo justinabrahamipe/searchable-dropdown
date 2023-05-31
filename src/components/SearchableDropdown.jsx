@@ -3,7 +3,7 @@ import Dropdown from "./Dropdown";
 
 function SearchableDropdown({
   listOfValues,
-  onSelect,
+  // onSelect,
   uniqueId,
   itemInObjectToShowInDropdown,
 }) {
@@ -11,11 +11,8 @@ function SearchableDropdown({
   const handleTextfieldChange = (event) => {
     setTextfieldValue(event.target.value);
   };
-  const filterArray = (i) => {
-    return i[itemInObjectToShowInDropdown]
-      ?.toLowerCase()
-      ?.includes(textfieldValue);
-  };
+  const filterArray = (i) =>
+    i[itemInObjectToShowInDropdown]?.toLowerCase()?.includes(textfieldValue);
   return (
     <div>
       <input
